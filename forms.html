@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src=".forms.js"></script>
+</head>
+<body>
+    <form name="form1">
+        <p>Выберите марку</p>
+        <select name="select">
+          <option value="reno" name="reno" id="reno" onclick="reno()">Reno</option>
+          <option value="opel" id="opel" onclick="opel()">Opel
+          </option>
+          <option value="mazda" id="mazda" onclick="mazda()">Mazda</option>
+          <option value="jaguar" id="Jaguar" onclick="jaguar()">Jaguar</option>
+        </select>
+    </form>
+    <div id="ifReno">
+
+    </div>
+    <!-- <form name="form2">
+        <p>Выберите марку</p>
+        <select name="select" >
+          <option value="logan" >Logan</option>
+          <option value="loganS">Logan Stepway
+          </option>
+          <option value="sandero">Sandero</option>
+          <option value="duster">Duster</option>
+        </select>
+    </form> -->
+
+        <form name="form3">
+            <p>Выберите топливо</p>
+            <input id="Fuel1" type="checkbox" name="fuel">
+            <label for="Fuel1">Бензин</label>
+            <input id="Fuel2" type="checkbox" name="fuel">
+            <label for="Fuel2">Дизель</label>
+            <input id="Fuel3" type="checkbox" name="fuel">
+            <label for="Fuel3">Электричество</label>
+            <input id="Fuel4" type="checkbox" name="fuel">
+            <label for="Fuel4">Газ</label>
+          </form>
+          <form name="form4">
+            <p>Выберите объем двигателя в л.</з>
+            <input type="number" id='engine'name="dvig" min="1.1" max="3.5" value="1.1" step="0.1">
+          </form>
+          <form name="form5">
+            <p>Выберите сосотояние автомобиля</p>
+            <input type="radio" id="newcar" name="condition" onclick="getBlank()">
+            <label for="newcar">Новая машина</label>
+            <input type="radio" id="oldcar" name="condition" onclick="Hi()">
+            <label for="oldcar">Поддерженная машина</label>
+          </form>
+          <div name="ifOld" id="ifOld">
+
+          </div>
+          <form name="form6">
+            <p>Выберите форму оплаты</p>
+            <label><input type="radio" name="paymentMethod">Наличная оплата</label>
+            <label><input type="radio" name="paymentMethod">Оплата картой</label>
+            <label><input type="radio" name="paymentMethod">Оплата по счет-фактуре</label>
+          </form>
+<p>Итог</p>
+<p id="price">0</p>
+              <!-- <button class="button">Submit</button> -->
+</body>
+</html>
